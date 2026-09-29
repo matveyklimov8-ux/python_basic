@@ -1,0 +1,8 @@
+print(25, type(25))
+print("25", type("25"))
+print(25.0, type(25.0))
+print("25.0", type("25.0"))
+print(-10, type(-10))
+print("Python", type("Python"))
+print(0, type(0))
+print(0.0, type(0.0))
