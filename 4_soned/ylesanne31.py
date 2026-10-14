@@ -1,0 +1,16 @@
+import tkinter as tk
+aken = tk.Tk()
+aken.title("Minu kodu")
+tahvel = tk.Canvas(aken, width=600, height=400, bg="#9edcf5")
+tahvel.pack()
+tahvel.create_rectangle(0, 320, 600, 400, fill="#4b9b50", outline="#4b9b50")
+tahvel.create_rectangle(180, 170, 420, 320, fill="#f3d6a0", outline="black", width=2)
+tahvel.create_polygon(150, 175, 300, 60, 450, 175, fill="#b74335", outline="black", width=2)
+tahvel.create_rectangle(280, 235, 325, 320, fill="#7b4b2a", outline="black")
+tahvel.create_oval(310, 275, 316, 281, fill="yellow", outline="yellow")
+for x in (205, 350):
+    tahvel.create_rectangle(x, 205, x + 45, 250, fill="#92d7f5", outline="black", width=2)
+    tahvel.create_line(x + 22, 205, x + 22, 250, fill="black")
+    tahvel.create_line(x, 227, x + 45, 227, fill="black")
+tahvel.create_text(300, 30, text="Minu kodu", font=("Arial", 20, "bold"))
+aken.mainloop()

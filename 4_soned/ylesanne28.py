@@ -1,0 +1,11 @@
+import tkinter as tk
+aken = tk.Tk()
+aken.title("Minu kujundid")
+tahvel = tk.Canvas(aken, width=600, height=400, bg="white")
+tahvel.pack()
+tahvel.create_rectangle(30, 30, 180, 120, fill="red")
+tahvel.create_oval(230, 30, 340, 140, fill="blue")
+tahvel.create_line(30, 180, 210, 180, fill="green", width=5)
+tahvel.create_oval(250, 190, 410, 270, fill="yellow")
+tahvel.create_text(300, 340, text="Minu kujundid", font=("Arial", 20))
+aken.mainloop()
