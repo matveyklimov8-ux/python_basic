@@ -1,0 +1,10 @@
+Python aitab õppida programmeerimist.
+Tartu on ilus linn.
+Järjendid hoiavad mitu väärtust ühes muutujas.
+Tsüklid aitavad korduvaid ülesandeid lahendada.
+Failidest saab andmeid lugeda ja sinna andmeid kirjutada.
+Täna harjutame Python keele põhitõdesid.
+Muutujatel on nimi ja väärtus.
+Loendid ehk järjendid on kasulikud andmete hoidmiseks.
+Iga harjutus aitab paremini mõista koodi.
+Harjutamine teeb programmeerimise lihtsamaks.
