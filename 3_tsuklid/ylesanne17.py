@@ -1,16 +1,12 @@
-oige_parool = "python123"
-katse = 0
-oige = False
-
-while katse < 3 and not oige:
-    parool = input("Sisesta parool: ")
-    katse = katse + 1
-
-    if parool == oige_parool:
-        oige = True
-        print("Ligipääs lubatud!")
-    else:
-        print("Vale parool!")
-
-if not oige:
+correct_password = "python123"
+attempts = 0
+success = False
+while attempts < 3 and not success:
+    password = input("Sisesta parool: ")
+    attempts += 1
+    if password == correct_password:
+        success = True
+if success:
+    print("Ligipääs lubatud!")
+else:
     print("Ligipääs blokeeritud!")

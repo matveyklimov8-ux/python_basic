@@ -1,9 +1,7 @@
-summa = 1000
-aasta = 0
-
-while summa < 2000:
-    summa = summa * 1.05
-    aasta = aasta + 1
-
-print("Aastaid kulus:", aasta)
-print("Summa:", round(summa, 2), "eurot")
+balance = 1000.0
+years = 0
+while balance < 2000:
+    balance *= 1.05
+    years += 1
+print("Aastaid kulus:", years)
+print(f"Kontol on: {balance:.2f} eurot")

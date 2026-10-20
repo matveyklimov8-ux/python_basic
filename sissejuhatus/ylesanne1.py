@@ -1,8 +1,4 @@
-print(25, type(25))
-print("25", type("25"))
-print(25.0, type(25.0))
-print("25.0", type("25.0"))
-print(-10, type(-10))
-print("Python", type("Python"))
-print(0, type(0))
-print(0.0, type(0.0))
+# Iga väärtuse andmetüüp: int, float või str.
+values = [25, "25", 25.0, "25.0", -10, "Python", 0, 0.0]
+for value in values:
+    print(repr(value), "->", type(value).__name__)

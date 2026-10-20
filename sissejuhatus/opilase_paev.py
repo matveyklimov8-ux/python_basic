@@ -1,18 +1,13 @@
 name = input("Nimi: ")
 age = int(input("Vanus: "))
-distance = float(input("Koolitee: "))
-minutes = int(input("Aeg minutites: "))
-
-next_age = age + 1
-meters = int(distance * 1000)
-
-hours = minutes // 60
-minutes_left = minutes % 60
-
-speed = distance / (minutes / 60)
-
-print("Tere,", name + "!")
-print("Järgmisel aastal oled " + str(next_age) + "-aastane.")
-print("Sinu koolitee pikkus on", meters, "meetrit.")
-print("Koolitee kestab", hours, "tundi ja", minutes_left, "minutit.")
-print("Keskmine kiirus on", speed, "km/h.")
+distance_km = float(input("Koolitee pikkus kilomeetrites: "))
+time_minutes = int(input("Koolitee kestus minutites: "))
+print(f"Tere, {name}!")
+print(f"Järgmisel aastal oled {age + 1}-aastane.")
+print("Sinu koolitee pikkus on", distance_km * 1000, "meetrit.")
+print("Koolitee kestab", time_minutes // 60, "tundi ja", time_minutes % 60, "minutit.")
+if time_minutes > 0:
+    speed = distance_km / (time_minutes / 60)
+    print("Keskmine kiirus on", round(speed, 2), "km/h.")
+else:
+    print("Keskmist kiirust ei saa arvutada, sest aeg peab olema positiivne.")

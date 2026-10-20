@@ -1,16 +1,12 @@
 from random import randint
-
-vise = 1
-kiri = 0
-kull = 0
-
-while vise <= 1000:
-    tulemus = randint(1, 100)
-    if tulemus <= 70:
-        kiri = kiri + 1
+heads = 0
+letters = 0
+i = 0
+while i < 1000:
+    if randint(1, 10) <= 7:
+        letters += 1  # Kiri 70% tõenäosusega
     else:
-        kull = kull + 1
-    vise = vise + 1
-
-print("Kiri:", kiri)
-print("Kull:", kull)
+        heads += 1
+    i += 1
+print("Kiri:", letters)
+print("Kull:", heads)

@@ -1,40 +1,34 @@
-# Kohustuslik kontrollulesanne: arvude analüsaator
-arvude_kogus = 0
+count = 0
 summa = 0
-positiivseid = 0
-negatiivseid = 0
-paarisarve = 0
-paarituid = 0
+positive = 0
+negative = 0
+even = 0
+odd = 0
 
-arv = int(input("Sisesta arv (0 lõpetab): "))
-
-while arv != 0:
-    arvude_kogus = arvude_kogus + 1
-    summa = summa + arv
-
-    if arv > 0:
-        positiivseid = positiivseid + 1
-    elif arv < 0:
-        negatiivseid = negatiivseid + 1
+number = int(input("Sisesta arv (0 lõpetab): "))
+while number != 0:
+    count += 1
+    summa += number
+    if number > 0:
+        positive += 1
+    elif number < 0:
+        negative += 1
     else:
-        pass  # 0 lõpetab tsukli enne statistika uuendamist.
-
-    if arv % 2 == 0:
-        paarisarve = paarisarve + 1
+        pass
+    if number % 2 == 0:
+        even += 1
     else:
-        paarituid = paarituid + 1
+        odd += 1
+    number = int(input("Sisesta arv (0 lõpetab): "))
 
-    arv = int(input("Sisesta arv (0 lõpetab): "))
-
-print("--- TULEMUSED ---")
-
-if arvude_kogus == 0:
+print("\n--- TULEMUSED ---")
+if count == 0:
     print("Ühtegi arvu ei sisestatud.")
 else:
-    print("Sisestatud arve:", arvude_kogus)
+    print("Sisestatud arve:", count)
     print("Summa:", summa)
-    print("Keskmine: %.2f" % (summa / arvude_kogus))
-    print("Positiivseid arve:", positiivseid)
-    print("Negatiivseid arve:", negatiivseid)
-    print("Paarisarve:", paarisarve)
-    print("Paarituid:", paarituid)
+    print(f"Keskmine: {summa / count:.2f}")
+    print("\nPositiivseid arve:", positive)
+    print("Negatiivseid arve:", negative)
+    print("Paarisarve:", even)
+    print("Paarituid:", odd)

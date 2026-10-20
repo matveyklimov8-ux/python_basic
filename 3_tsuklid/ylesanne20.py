@@ -1,7 +1,6 @@
-summa = 1000
-aasta = 1
-
-while aasta <= 10:
-    summa = summa * 1.05
-    print(str(aasta) + ". aasta:", round(summa, 2), "eurot")
-    aasta = aasta + 1
+balance = 1000.0
+year = 1
+while year <= 10:
+    balance *= 1.05
+    print(f"{year}. aasta: {balance:.2f} eurot")
+    year += 1

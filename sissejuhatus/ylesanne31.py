@@ -1,7 +1,4 @@
-morning = float(input("Hommik: "))
-day = float(input("Päev: "))
-evening = float(input("Õhtu: "))
-
-average = (morning + day + evening) / 3
-
-print("Keskmine temperatuur:", average)
+morning = float(input("Hommikune temperatuur: "))
+day = float(input("Päevane temperatuur: "))
+evening = float(input("Õhtune temperatuur: "))
+print("Keskmine temperatuur:", (morning + day + evening) / 3)

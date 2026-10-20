@@ -1,7 +1,7 @@
 name = input("Nimi: ")
 points = int(input("Punktisumma: "))
 absences = int(input("Puudumiste arv: "))
-works = input("Kas kõik tööd on esitatud (jah/ei): ")
+works = input("Kas kõik tööd on esitatud (jah/ei): ").strip().lower()
 
 if points >= 90:
     grade = 5
@@ -16,17 +16,14 @@ else:
 
 print("Õpilane:", name)
 print("Hinne:", grade)
-
 if absences > 10:
     print("Hoiatus: liiga palju puudumisi.")
 else:
     print("Puudumiste arv on lubatud.")
-
 if works == "jah":
     print("Kõik tööd on esitatud.")
 else:
     print("Kõik tööd ei ole esitatud.")
-
 if grade >= 3 and absences <= 10 and works == "jah":
     print("Aine on läbitud.")
 else:

@@ -1,16 +1,13 @@
-kogus = 0
-summa = 0
-
-while True:
-    temperatuur = float(input("Sisesta temperatuur (999 lõpetab): "))
-    if temperatuur == 999:
-        break
-    summa = summa + temperatuur
-    kogus = kogus + 1
-
-if kogus > 0:
-    print("Temperatuure sisestati:", kogus)
-    print("Temperatuuride summa:", summa)
-    print("Keskmine temperatuur:", summa / kogus)
+count = 0
+summa = 0.0
+temperature = float(input("Sisesta temperatuur (999 lõpetab): "))
+while temperature != 999:
+    summa += temperature
+    count += 1
+    temperature = float(input("Sisesta temperatuur (999 lõpetab): "))
+if count > 0:
+    print("Temperatuure:", count)
+    print("Summa:", summa)
+    print("Keskmine:", summa / count)
 else:
-    print("Ühtegi temperatuuri ei sisestatud.")
+    print("Temperatuure ei sisestatud.")

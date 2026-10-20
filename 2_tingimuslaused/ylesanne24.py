@@ -1,5 +1,4 @@
 year = int(input("Sisesta aasta: "))
-
 if year % 400 == 0:
     print("Liigaasta")
 elif year % 100 == 0:

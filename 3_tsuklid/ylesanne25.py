@@ -1,15 +1,14 @@
 import turtle
-
-kulgi = int(input("Mitu külge? "))
-pikkus = int(input("Külje pikkus? "))
-
-if kulgi < 3 or pikkus <= 0:
-    print("Külgede arv peab olema vähemalt 3 ja pikkus positiivne.")
+sides = int(input("Mitu külge? "))
+length = int(input("Külje pikkus? "))
+if sides < 3:
+    print("Hulknurgal peab olema vähemalt 3 külge.")
 else:
-    nurk = 360 / kulgi
+    t = turtle.Turtle()
+    angle = 360 / sides
     i = 0
-    while i < kulgi:
-        turtle.forward(pikkus)
-        turtle.right(nurk)
-        i = i + 1
+    while i < sides:
+        t.forward(length)
+        t.right(angle)
+        i += 1
     turtle.done()

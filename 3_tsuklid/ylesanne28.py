@@ -1,13 +1,10 @@
 from random import randint
-
-vise = 1
+i = 1
 summa = 0
-
-while vise <= 10:
-    tulemus = randint(1, 6)
-    print(str(vise) + ". vise:", tulemus)
-    summa = summa + tulemus
-    vise = vise + 1
-
+while i <= 10:
+    roll = randint(1, 6)
+    print(f"{i}. vise: {roll}")
+    summa += roll
+    i += 1
 print("Visete summa:", summa)
 print("Keskmine tulemus:", summa / 10)

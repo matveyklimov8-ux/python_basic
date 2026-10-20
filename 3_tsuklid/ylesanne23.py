@@ -1,9 +1,10 @@
 import turtle
-
+screen = turtle.Screen()
+screen.title("Ruut")
+t = turtle.Turtle()
 i = 0
 while i < 4:
-    turtle.forward(100)
-    turtle.right(90)
-    i = i + 1
-
+    t.forward(100)
+    t.right(90)
+    i += 1
 turtle.done()

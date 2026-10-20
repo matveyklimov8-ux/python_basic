@@ -1,5 +1,4 @@
 temperature = float(input("Sisesta temperatuur: "))
-
 if temperature < 0:
     print("Külmub")
 elif temperature <= 15:

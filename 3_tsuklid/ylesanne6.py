@@ -1,6 +1,5 @@
-piir = int(input("Sisesta piir: "))
-arv = 3
-
-while arv <= piir:
-    print(arv)
-    arv = arv + 3
+limit = int(input("Sisesta piir: "))
+i = 3
+while i <= limit:
+    print(i)
+    i += 3

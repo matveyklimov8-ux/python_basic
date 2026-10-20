@@ -1,3 +1,1 @@
-result = (6 + 4) * 2
-
-print(result)
+print((6 + 4) * 2)

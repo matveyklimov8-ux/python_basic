@@ -1,6 +1,2 @@
-cents = int(input("Sisesta summa sentides: "))
-
-euros = cents // 100
-cents_left = cents % 100
-
-print(euros, "eurot ja", cents_left, "senti")
+cents = int(input("Summa sentides: "))
+print(cents // 100, "eurot ja", cents % 100, "senti")

@@ -1,14 +1,11 @@
-positiivseid = 0
-negatiivseid = 0
-
-while True:
-    arv = int(input("Sisesta arv (0 lõpetab): "))
-    if arv == 0:
-        break
-    elif arv > 0:
-        positiivseid = positiivseid + 1
+positive = 0
+negative = 0
+number = int(input("Sisesta arv (0 lõpetab): "))
+while number != 0:
+    if number > 0:
+        positive += 1
     else:
-        negatiivseid = negatiivseid + 1
-
-print("Positiivseid:", positiivseid)
-print("Negatiivseid:", negatiivseid)
+        negative += 1
+    number = int(input("Sisesta arv (0 lõpetab): "))
+print("Positiivseid:", positive)
+print("Negatiivseid:", negative)

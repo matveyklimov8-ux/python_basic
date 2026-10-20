@@ -1,12 +1,12 @@
-# Ilma tsuklita:
-# print("Tere!")
-# print("Tere!")
-# print("Tere!")
-# print("Tere!")
-# print("Tere!")
+# Esialgu ilma tsüklita.
+print("Tere!")
+print("Tere!")
+print("Tere!")
+print("Tere!")
+print("Tere!")
 
-# Sama tegevus while-tsukliga:
+# Sama töö tsükliga:
 i = 0
 while i < 5:
     print("Tere!")
-    i = i + 1
+    i += 1

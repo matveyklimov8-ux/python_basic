@@ -1,6 +1,3 @@
-length = float(input("Sisesta pikkus: "))
-width = float(input("Sisesta laius: "))
-
-area = length * width
-
-print("Pindala:", area)
+length = float(input("Ristküliku pikkus: "))
+width = float(input("Ristküliku laius: "))
+print("Pindala:", length * width)

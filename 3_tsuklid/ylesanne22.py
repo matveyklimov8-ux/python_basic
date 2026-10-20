@@ -1,9 +1,7 @@
-rahvaarv = 50000
-aastaid = 0
-
-while rahvaarv <= 60000:
-    rahvaarv = rahvaarv * 1.02
-    aastaid = aastaid + 1
-
-print("Aastaid kulus:", aastaid)
-print("Elanike arv:", round(rahvaarv))
+population = 50000.0
+years = 0
+while population <= 60000:
+    population *= 1.02
+    years += 1
+print("Aastaid kulus:", years)
+print("Elanike arv:", round(population))

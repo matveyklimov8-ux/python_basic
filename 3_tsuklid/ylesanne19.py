@@ -1,6 +1,4 @@
-tekst = input("Sisesta tekst: ")
-
-while tekst != "STOP":
-    tekst = input("Sisesta tekst: ")
-
+text = input("Sisesta tekst: ")
+while text != "STOP":
+    text = input("Sisesta tekst: ")
 print("Programm lõpetas töö.")

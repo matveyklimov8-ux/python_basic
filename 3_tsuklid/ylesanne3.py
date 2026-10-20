@@ -1,8 +1,10 @@
-# Lõppversioon väljastab arvud 0 kuni 20.
+i = 1
+while i <= 10:
+    print(i)
+    i += 1
+
+print("Arvud 0 kuni 20:")
 i = 0
 while i <= 20:
     print(i)
-    i = i + 1
-
-# Arvude 1 kuni 10 jaoks kasuta algväärtust i = 1
-# ja tingimust while i <= 10.
+    i += 1

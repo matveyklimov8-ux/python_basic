@@ -1,6 +1,3 @@
 price = float(input("Toote hind: "))
-amount = int(input("Kogus: "))
-
-total = price * amount
-
-print("Kokku:", total, "eurot")
+quantity = int(input("Kogus: "))
+print("Kokku:", price * quantity, "eurot")

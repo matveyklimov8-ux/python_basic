@@ -1,9 +1,7 @@
-arv = 1
-kogus = 0
-
-while arv <= 100:
-    if arv % 7 == 0:
-        kogus = kogus + 1
-    arv = arv + 1
-
-print("7-ga jaguvaid arve:", kogus)
+i = 1
+count = 0
+while i <= 100:
+    if i % 7 == 0:
+        count += 1
+    i += 1
+print("7-ga jaguvaid arve:", count)

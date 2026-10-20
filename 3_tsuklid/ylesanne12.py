@@ -1,15 +1,11 @@
-kogus = int(input("Mitu arvu soovid sisestada? "))
+count = int(input("Mitu arvu soovid sisestada? "))
 i = 0
-summa = 0
-
-while i < kogus:
-    arv = float(input("Sisesta arv: "))
-    summa = summa + arv
-    i = i + 1
-
-if kogus > 0:
-    keskmine = summa / kogus
+summa = 0.0
+while i < count:
+    summa += float(input("Sisesta arv: "))
+    i += 1
+if count > 0:
     print("Summa:", summa)
-    print("Keskmine:", keskmine)
+    print("Keskmine:", summa / count)
 else:
-    print("Ühtegi arvu ei sisestatud.")
+    print("Arve ei sisestatud.")

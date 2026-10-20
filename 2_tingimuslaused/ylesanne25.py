@@ -1,7 +1,6 @@
 a = float(input("Esimene arv: "))
-operation = input("Tehe (+, -, *, /): ")
+operation = input("Tehe (+, -, *, /): ").strip()
 b = float(input("Teine arv: "))
-
 if operation == "+":
     print("Tulemus:", a + b)
 elif operation == "-":
