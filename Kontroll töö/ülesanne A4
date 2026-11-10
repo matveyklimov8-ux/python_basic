@@ -1,0 +1,11 @@
+punktid = int(input("Sisestage punktid: "))
+if punktid >= 90:
+    print("5")
+elif punktid >= 75:
+    print("4")
+else:
+    if punktid >= 50:
+        print("3")
+    else:
+        for i in range(5):
+            print("Õpi veel!")

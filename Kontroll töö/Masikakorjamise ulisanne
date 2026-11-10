@@ -1,0 +1,11 @@
+def raha_eurodes(kastid, hind_sentides):
+    return round(kastid * 5 * hind_sentides / 100, 1)
+faili_nimi = input("Sisestage failinimi: ")
+hind = int(input("Sisestage kilo hind sentides: "))
+kokku = 0
+with open(faili_nimi, encoding="utf-8") as f:
+    for paev, rida in enumerate(f, start=1):
+        summa = raha_eurodes(int(rida), hind)
+        print(f"{paev}. päeval sai {summa} eurot.")
+        kokku += summa
+print(f"Kokku sai: {kokku} eurot.")
