@@ -1,0 +1,3 @@
+Mõlemas failis: ['Anna', 'Jüri']
+Ainult esimeses failis: ['Mari', 'Peeter']
+Ainult teises failis: ['Kati', 'Martin']

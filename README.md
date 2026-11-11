@@ -1,44 +1,33 @@
-# python_basic — учебные решения Moodle (темы 1–7)
+# Python: parandused tagasiside põhjal + lisateema 8
 
-| Папка | Содержание |
-|---|---|
-| `sissejuhatus/` | Основы Python: 45 упражнений + `opilase_paev.py` |
-| `2_tingimuslaused/` | Условия: 32 упражнения + `opilase_tulemus.py` |
-| `3_tsuklid/` | Циклы: 42 упражнения + `arvude_analuusaator.py` |
-| `4_soned/` | Строки и Tkinter: 40 упражнений |
-| `5_jarjendid/` | Списки и файлы: 37 упражнений + контрольная |
-| `6_funktsioonid/` | Функции: 50 упражнений + контрольная |
-| `7_andmevahetus/` | Файлы и веб-данные: 38 упражнений + контрольная |
+See komplekt sisaldab kahte eraldi osa:
 
-Всего 290 Python-файлов. Все прошли синтаксическую проверку `compileall`; интерактивные, сетевые и графические программы ещё требуют запуска в соответствующем окружении.
+- `python_basic/` — õpetaja tagasiside põhjal parandatud sinu olemasolevate teemade 1–7 lahendused.
+- `8_testimine/` — lisateema 8 ülesannete kogumik ning kohustuslik ülesanne 45 `Ostukorvi automaattestimine` koos testide ja README-ga.
 
-## Проверка синтаксиса
+## Käivitamine
 
-Из корня проекта:
+Põhiteemade süntaksikontroll:
 
 ```bash
+cd python_basic
 python3 -m compileall -q sissejuhatus 2_tingimuslaused 3_tsuklid 4_soned 5_jarjendid 6_funktsioonid 7_andmevahetus
 ```
 
-## Tkinter в Ubuntu
-
-Если `import tkinter` завершается с `ModuleNotFoundError`, установи системный пакет:
+Lisateema 8 automaattestid:
 
 ```bash
-sudo apt update
-sudo apt install python3-tk
+cd 8_testimine
+python3 -m pip install pytest
+python3 -m pytest -q test_ostukorv.py
 ```
 
-Затем в том же виртуальном окружении, которое выбрано в VS Code, проверь:
+## Olulised märkused
 
-```bash
-python -c "import tkinter; print(tkinter.TkVersion)"
-```
+- Tkinteri ülesandeid (`4_soned`) tuleb visuaalselt kontrollida graafilises töölauaseansis. Siin kontrolliti nende süntaksit, mitte akende välimust.
+- Veebiülesanded (`7_andmevahetus` 25–27) vajavad töötavat internetiühendust. Nende väliste päringute tulemust ei ole selles kontrollis kinnitatud.
+- Tsüklite ülesannete 36–38 algseid vigaseid lähteprogramme ei olnud olemasolevas ekspordis. Neile lisati selgitused piirtingimuste ja loenduri suurendamise kohta, kuid algse vea täpset kuju pole oletatud.
+- Õpetaja mainitud `student/students` sõnastuse näidet ei olnud esitatud failides leida; see on dokumenteeritud failis `python_basic/TAGASISIDE_PARANDUSED.md`.
 
-Не используй `pip install tkinter`: в Ubuntu это системная зависимость Python.
-
-## Git
-
-Корневой `.gitignore` исключает `.venv/`, `venv/`, `__pycache__/` и файлы байткода. Перед коммитом проверяй `git status --short` и не добавляй виртуальное окружение.
-
-Перед распаковкой поверх существующего репозитория создай резервную копию: ZIP содержит полный комплект заданий и может заменить одноимённые файлы.
+Paranduste täielik loend: `python_basic/TAGASISIDE_PARANDUSED.md`.
+Vene keelne juhis: `python_basic/ИСПРАВЛЕНИЯ_ПО-РУССКИ.md`.

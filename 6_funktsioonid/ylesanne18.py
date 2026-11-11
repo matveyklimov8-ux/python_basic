@@ -1,13 +1,16 @@
-# Ülesanne 18. print() ja return
+# Ülesanne 18. Mõlemad funktsioonid tagastavad väärtuse.
 
 def arvuta1(a, b):
-    print(a + b)  # Kuvab tulemuse, kuid ei tagasta seda.
+    return a + b
+
 
 def arvuta2(a, b):
-    return a + b   # Tagastab tulemuse kasutamiseks programmis.
+    return a * b
 
+# Mõlema funktsiooni tagastatud väärtust saab kasutada uues arvutuses.
 x = arvuta1(5, 3)
 y = arvuta2(5, 3)
-print("x =", x)  # None
-print("y =", y)  # 8
-# return-väärtust saab kasutada uues arvutuses, näiteks print(y * 2).
+print("Liitmise tulemus:", x)
+print("Korrutamise tulemus:", y)
+print("Uus arvutus (liitmise tulemus × 2):", x * 2)
+print("Uus arvutus (korrutamise tulemus + 10):", y + 10)

@@ -1,3 +1,10 @@
 Python on populaarne programmeerimiskeel.
 Python sobib hästi algajatele.
 Failide töötlemine on oluline oskus.
+Tekstifaile saab lugeda ja muuta Pythoni abil.
+Igal real võib olla eraldi teave.
+Programm saab failist sõnu ja ridu kokku lugeda.
+Andmeid saab pärast töötlemist uude faili salvestada.
+Suur- ja väiketähti saab võrrelda meetodiga lower().
+Vead aitavad õppimise käigus programme paremaks teha.
+Harjutamine muudab programmeerimise lihtsamaks.

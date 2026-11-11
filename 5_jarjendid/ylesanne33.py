@@ -8,5 +8,9 @@ sagedasemad = [hinne for hinne, kogus in sagedused.items() if kogus == suurim_sa
 print("Kõige sagedasem hinne:", ", ".join(map(str, sagedasemad)))
 print("Positiivseid hindeid (3–5):", sum(1 for hinne in hinded if hinne >= 3))
 print("Mitterahuldavaid hindeid (1–2):", sum(1 for hinne in hinded if hinne <= 2))
+
+print("Hinnete sagedus:")
 for hinne in range(1, 6):
-    print(f"Hinne {hinne}: {'*' * sagedused[hinne]}")
+    kogus = sagedused[hinne]
+    # Iga tulp näitab sagedust tärnidega ning arv on toodud tulpdiagrammi kõrval.
+    print(f"Hinne {hinne}: {'*' * kogus} ({kogus})")
